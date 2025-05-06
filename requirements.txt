@@ -6,4 +6,5 @@ scikit-learn
 catboost
 statsmodels
 xgboost
+openpyxl
 -e .
