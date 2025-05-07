@@ -7,4 +7,5 @@ catboost
 statsmodels
 xgboost
 openpyxl
+dill
 -e .
