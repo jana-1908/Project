@@ -32,7 +32,8 @@ class DataTransformation:
         try:
             # Replace special characters with NaN and fix FutureWarning
             special_chars = {'#', '@', '+', '$', '*'}
-            df = df.replace(special_chars, np.nan).infer_objects(copy=False)
+            df = df.replace(special_chars, np.nan)
+            df = df.infer_objects(copy=False)
 
             # Convert numeric columns safely
             numeric_columns_to_convert = [
